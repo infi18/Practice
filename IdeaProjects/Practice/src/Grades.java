@@ -9,14 +9,10 @@ public class Grades {
         List<Integer> newGrade = new ArrayList<>();
         for (int i : grades) {
             if (i >= 38) {
-
                 if ((i % 5) == 3 || (i % 5) == 4 ){
-
                     i = (i - (i % 5) + 5) ;
                 }
-
             }
-
             newGrade.add(i);
         }
                 return newGrade;
